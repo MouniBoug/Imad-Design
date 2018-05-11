@@ -1,0 +1,150 @@
+/* Impots------------------------------ */
+header {
+  padding: 6rem 0;
+}
+
+/* Thumbnails detail section */
+.thumbnails-detail-section {
+  padding: 6rem 0;
+  background: #212529;
+}
+
+.thumbnails-detail-section h1 {
+  font-size: 44px;
+}
+
+.thumbnails-detail-section .overlap-card {
+  background-color: #2e3858;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
+  /* Hover Effects */
+  /* Scale up the card */
+  /* Fade in the pseudo-element with the bigger shadow */
+}
+
+.thumbnails-detail-section .overlap-card img {
+  -webkit-box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnails-detail-section .overlap-card .card {
+  position: relative;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  border: 0;
+}
+
+.thumbnails-detail-section .overlap-card .card::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.thumbnails-detail-section .overlap-card .card:hover {
+  -webkit-transform: scale(1.06, 1.06);
+          transform: scale(1.06, 1.06);
+  -webkit-box-shadow: 0 3px 55px 8px rgba(0, 0, 0, 0.2), 0 6px 30px 5px rgba(27, 29, 31, 0.19);
+          box-shadow: 0 3px 55px 8px rgba(0, 0, 0, 0.2), 0 6px 30px 5px rgba(27, 29, 31, 0.19);
+}
+
+.thumbnails-detail-section .overlap-card .card:hover::after {
+  opacity: 1;
+}
+
+.thumbnails-detail-section .overlap-card .page-nav {
+  border-top: 1px solid #797676;
+  font-size: 19px;
+}
+
+.thumbnails-detail-section .overlap-card .page-nav a {
+  color: #6c757d;
+  -webkit-box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5);
+  background: #212529;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  display: inline-block;
+}
+
+.thumbnails-detail-section .overlap-card .page-nav a:hover {
+  text-decoration: none;
+  color: #4daaf2;
+}
+
+.thumbnails-detail-section .overlap-card .page-nav .active {
+  color: #4daaf2;
+  font-weight: bold;
+}
+
+/* Thumbnails detail section */
+.thumbnails-detail-section.banner-section .overlap-card {
+  /* Hover Effects */
+  /* Scale up the card */
+  /* Fade in the pseudo-element with the bigger shadow */
+}
+
+.thumbnails-detail-section.banner-section .overlap-card img {
+  -webkit-box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.5);
+  padding: .6rem;
+  border-radius: 5px;
+}
+
+.thumbnails-detail-section.banner-section .overlap-card .card {
+  position: relative;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  border: 0;
+}
+
+.thumbnails-detail-section.banner-section .overlap-card .card::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.thumbnails-detail-section.banner-section .overlap-card .card:hover {
+  -webkit-transform: scale(1.06, 1.06);
+          transform: scale(1.06, 1.06);
+  -webkit-box-shadow: 0 3px 55px 8px rgba(0, 0, 0, 0.2), 0 6px 30px 5px rgba(27, 29, 31, 0.19);
+          box-shadow: 0 3px 55px 8px rgba(0, 0, 0, 0.2), 0 6px 30px 5px rgba(27, 29, 31, 0.19);
+}
+
+.thumbnails-detail-section.banner-section .overlap-card .card:hover::after {
+  opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .thumbnails-detail-section .container {
+    max-width: 1480px;
+  }
+}
+
+/* Light Box Arrows */
+.ekko-lightbox-nav-overlay a span {
+  font-size: 55px;
+}
+
+.modal-content {
+  background: #2e3858;
+}
+
+.modal-body {
+  padding: 0;
+  background: #2e3858;
+}
+
+.modal-backdrop.show {
+  opacity: .8;
+}
