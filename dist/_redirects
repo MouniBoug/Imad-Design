@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+https://imad-design.netlify.com/* https://imad-design.cf/:splat 301!
+
+# These extra rules are required because HTTPS is not forced
+http://imad-design.netlify.com/* https://imad-design.cf/:splat 301!
