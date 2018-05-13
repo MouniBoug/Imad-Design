@@ -36,24 +36,23 @@
     //Loader
     document.addEventListener('DOMContentLoaded', function () {
       window.addEventListener("load", function (event) {
-        setTimeout(function () {
-          var el = document.querySelector('.circle__wrapper');
 
-          // fade out
-          function fadeOut(el) {
-            el.style.opacity = 1;
+        var el = document.querySelector('.circle__wrapper');
 
-            (function fade() {
-              if ((el.style.opacity -= .1) < 0) {
-                el.style.display = "none";
-              } else {
-                requestAnimationFrame(fade);
-              }
-            })();
-          }
-          fadeOut(el);
+        // fade out
+        function fadeOut(el) {
+          el.style.opacity = 1;
 
-        }, 900); // set the time here
+          (function fade() {
+            if ((el.style.opacity -= .1) < 0) {
+              el.style.display = "none";
+            } else {
+              requestAnimationFrame(fade);
+            }
+          })();
+        }
+        fadeOut(el);
+
       }, false);
     }, false);
 
@@ -81,6 +80,7 @@
     .circle__1 {
       width: 80px;
       height: 80px;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       position: absolute;
       top: 0;
@@ -93,13 +93,17 @@
       border-left: 5px solid transparent;
       border-bottom: 5px solid transparent;
       border-radius: 50%;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
+      -webkit-animation: rotateCircle 2.2s ease-in-out 0s infinite;
       animation: rotateCircle 2.2s ease-in-out 0s infinite;
     }
   
     .circle__2 {
       width: 65px;
       height: 65px;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       position: absolute;
       top: 0;
@@ -112,13 +116,17 @@
       border-left: 5px solid transparent;
       border-bottom: 5px solid transparent;
       border-radius: 50%;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
+      -webkit-animation: rotateCircle 2.1s ease-in-out 0.1s infinite;
       animation: rotateCircle 2.1s ease-in-out 0.1s infinite;
     }
   
     .circle__3 {
       width: 50px;
       height: 50px;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       position: absolute;
       top: 0;
@@ -131,13 +139,17 @@
       border-left: 5px solid transparent;
       border-bottom: 5px solid transparent;
       border-radius: 50%;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
+      -webkit-animation: rotateCircle 2s ease-in-out 0.2s infinite;
       animation: rotateCircle 2s ease-in-out 0.2s infinite;
     }
   
     .circle__4 {
       width: 35px;
       height: 35px;
+      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       position: absolute;
       top: 0;
@@ -150,22 +162,48 @@
       border-left: 5px solid transparent;
       border-bottom: 5px solid transparent;
       border-radius: 50%;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
+      -webkit-animation: rotateCircle 2s ease-in-out 0.3s infinite;
       animation: rotateCircle 2s ease-in-out 0.3s infinite;
+    }
+  
+    @-webkit-keyframes rotateCircle {
+      0% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      80% {
+        -webkit-transform: rotate(1060deg);
+        transform: rotate(1060deg);
+      }
+      90% {
+        -webkit-transform: rotate(1035deg);
+        transform: rotate(1035deg);
+      }
+      100% {
+        -webkit-transform: rotate(1035deg);
+        transform: rotate(1035deg);
+      }
     }
   
     @keyframes rotateCircle {
       0% {
+        -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
       }
       80% {
-        transform: rotate(calc(3turn - 20deg));
+        -webkit-transform: rotate(1060deg);
+        transform: rotate(1060deg);
       }
       90% {
-        transform: rotate(calc(3turn - 45deg));
+        -webkit-transform: rotate(1035deg);
+        transform: rotate(1035deg);
       }
       100% {
-        transform: rotate(calc(3turn - 45deg));
+        -webkit-transform: rotate(1035deg);
+        transform: rotate(1035deg);
       }
     }
   
@@ -177,6 +215,7 @@
     }
   
     .thumb-imgs {
+      -webkit-perspective: 800px;
       perspective: 800px;
     }
   </style>
@@ -389,9 +428,9 @@
             <div class="col-12">
               <div class="page-nav py-3">
                 <span class="text-muted pr-3">Page 1 of 3</span>
-                <a href="./thumbnails#thumbnails-gallery" class=" mx-1 px-3 py-1 mb-2 active">1</a>
-                <a href="./thumbnails2#thumbnails-gallery2" class=" mx-1 px-3 py-1 mb-2 ">2</a>
-                <a href="./thumbnails3#thumbnails-gallery3" class=" mx-1 px-3 py-1 mb-2">3</a>
+                <a href="./thumbnails" class=" mx-1 px-3 py-1 mb-2 active">1</a>
+                <a href="./thumbnails2" class=" mx-1 px-3 py-1 mb-2 ">2</a>
+                <a href="./thumbnails3" class=" mx-1 px-3 py-1 mb-2">3</a>
               </div>
             </div>
           </div>
