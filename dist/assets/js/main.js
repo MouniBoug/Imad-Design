@@ -1,5 +1,5 @@
 /**
- * detect IE
+ * detect IE browser
  * returns version of IE or false, if browser is not Internet Explorer
  */
 function detectIE() {
